@@ -27,8 +27,8 @@
 
         <nav class="hidden lg:flex items-center gap-8">
             <a href="#products" class="nav-link"><i data-lucide="shopping-bag" class="w-4 h-4"></i> Məhsullar</a>
-            <a href="#reviews" class="nav-link"><i data-lucide="message-circle" class="w-4 h-4"></i> Rəylər</a>
             <a href="#faq" class="nav-link"><i data-lucide="help-circle" class="w-4 h-4"></i> FAQ</a>
+             <a href="#reviews" class="nav-link"><i data-lucide="message-circle" class="w-4 h-4"></i> Rəylər</a>
             <a href="#contact" class="nav-link"><i data-lucide="phone" class="w-4 h-4"></i> Əlaqə</a>
         </nav>
 
@@ -48,8 +48,8 @@
 
         <div id="mobile-menu" class="hidden flex-col w-full mt-4 gap-4 pb-4 border-t border-[var(--text-color)] border-opacity-10 lg:hidden">
             <a href="#products" class="nav-link pt-4" onclick="toggleMobileMenu()"><i data-lucide="shopping-bag"></i> Məhsullar</a>
-            <a href="#reviews" class="nav-link" onclick="toggleMobileMenu()"><i data-lucide="message-circle"></i> Rəylər</a>
             <a href="#faq" class="nav-link" onclick="toggleMobileMenu()"><i data-lucide="help-circle"></i> FAQ</a>
+            <a href="#reviews" class="nav-link"><i data-lucide="message-circle" class="w-4 h-4"></i> Rəylər</a>
             <a href="#contact" class="nav-link" onclick="toggleMobileMenu()"><i data-lucide="phone"></i> Əlaqə</a>
         </div>
     </div>
@@ -142,7 +142,7 @@
                     <i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i>
                 </div>
                 <p class="italic mb-6 opacity-80">"Sifariş etdiyim ətir çox qalıcıdır. Qiyməti isə mağazalardan qat-qat ucuzdur. Çox razı qaldım!"</p>
-                <div class="font-bold">- Leyla M.</div>
+                <div class="font-bold">- Leyla</div>
             </div>
 
             <div class="bg-[var(--bg-color)] p-8 rounded-[2.5rem] shadow-sm border border-[var(--text-color)] border-opacity-5">
@@ -150,7 +150,7 @@
                     <i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i>
                 </div>
                 <p class="italic mb-6 opacity-80">"Bədən spreyi sifariş etdim, qoxusu tam istədiyim kimi alındı. Artıq daimi müştərinizəm."</p>
-                <div class="font-bold">- Əli H.</div>
+                <div class="font-bold">- Əli </div>
             </div>
 
             <div class="bg-[var(--bg-color)] p-8 rounded-[2.5rem] shadow-sm border border-[var(--text-color)] border-opacity-5">
@@ -158,7 +158,7 @@
                     <i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i>
                 </div>
                 <p class="italic mb-6 opacity-80">"Həm kosmetika, həm də ətir aldım. Çatdırılma çox sürətli idi. Təşəkkürlər Aytac Parfum!"</p>
-                <div class="font-bold">- Günel V.</div>
+                <div class="font-bold">- Günel </div>
             </div>
         </div>
 
@@ -173,6 +173,9 @@
                         <option>5 Ulduz</option>
                         <option>4 Ulduz</option>
                         <option>3 Ulduz</option>
+                        <option>2 Ulduz</option>
+                        <option>z Ulduz</option>
+
                     </select>
                 </div>
                 <button type="submit" class="w-full py-4 bg-[var(--text-color)] text-[var(--bg-color)] rounded-2xl font-bold hover:scale-[1.02] transition-transform">Rəyi göndər</button>
@@ -235,20 +238,20 @@
     <footer class="bg-[var(--text-color)] text-[var(--bg-color)] py-12 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div class="space-y-2">
-                <p id="stats-day" class="text-4xl font-black">12,450+</p>
+                <p id="stats-day" class="text-4xl font-black">10,450+</p>
                 <p class="text-sm opacity-70 uppercase tracking-widest">Bugünkü ziyarətçi</p>
             </div>
             <div class="space-y-2 border-y md:border-y-0 md:border-x border-white border-opacity-10 py-8 md:py-0">
-                <p id="stats-week" class="text-4xl font-black">85,200+</p>
+                <p id="stats-week" class="text-4xl font-black">75,200+</p>
                 <p class="text-sm opacity-70 uppercase tracking-widest">Həftəlik baxış</p>
             </div>
             <div class="space-y-2">
-                <p id="stats-month" class="text-4xl font-black">340,000+</p>
+                <p id="stats-month" class="text-4xl font-black">300,000+</p>
                 <p class="text-sm opacity-70 uppercase tracking-widest">Aylıq istifadəçi</p>
             </div>
         </div>
         <div class="mt-12 text-center text-xs opacity-50">
-            © 2024 AYTAC PARFUM. Bütün hüquqlar qorunur.
+            © 2026 AYTAC PARFUM. Bütün hüquqlar qorunur.
         </div>
     </footer>
 
@@ -297,14 +300,14 @@
 
     <div id="wheel-overlay" class="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-xl hidden">
         <div class="relative bg-[var(--bg-color)] p-8 rounded-[3rem] shadow-2xl border-4 border-[var(--text-color)] text-center max-w-sm w-full mx-4">
-            <h2 class="text-3xl font-black mb-6 italic uppercase tracking-tighter">Çarxı fırla!</h2>
+            <h2 class="text-3xl font-black mb-6 italic uppercase tracking-tighter">Hədiyyəli çarx!</h2>
             <div class="relative mx-auto w-64 h-64 mb-8">
                 <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 text-red-600 drop-shadow-md">
                     <i data-lucide="chevron-down" class="w-10 h-10 fill-current"></i>
                 </div>
                 <canvas id="wheelCanvas" width="500" height="500" class="w-full h-full rounded-full border-8 border-[var(--text-color)] shadow-lg"></canvas>
             </div>
-            <button id="spin-btn" onclick="spinWheel()" class="w-full py-4 bg-[var(--text-color)] text-[var(--bg-color)] rounded-2xl font-black text-xl hover:scale-105 transition-transform active:scale-95 shadow-xl">FIRLAT</button>
+            <button id="spin-btn" onclick="spinWheel()" class="w-full py-4 bg-[var(--text-color)] text-[var(--bg-color)] rounded-2xl font-black text-xl hover:scale-105 transition-transform active:scale-95 shadow-xl">FIRLA</button>
             <div id="prize-result" class="hidden mt-6 space-y-4">
                 <p class="text-2xl font-bold">Təbriklər!</p>
                 <div id="prize-text" class="text-3xl font-black text-red-600 uppercase"></div>
