@@ -319,3 +319,27 @@ body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); co
 #notification { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.8); z-index: 1000; opacity: 0; visibility: hidden; transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); background: var(--bg-color); border: 2px solid var(--text-color); }
 #notification.show { opacity: 1; visibility: visible; transform: translate(-50%, -50%) scale(1); }
 .countdown-timer { color: #ff0000 !important; font-weight: 900; margin: 10px 0; background: rgba(255, 0, 0, 0.05); padding: 5px; border-radius: 8px; text-align: center; }
+
+/* Принудительная настройка для мобильных устройств */
+@media (max-width: 640px) {
+    #product-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+        padding: 8px !important;
+    }
+
+    .product-card {
+        padding: 8px !important;
+    }
+
+    .product-card h3 {
+        font-size: 0.85rem !important; /* Уменьшаем шрифт названия */
+        line-height: 1.2;
+        height: 2.4em; /* Ограничиваем высоту текста */
+        overflow: hidden;
+    }
+
+    .product-card .text-xl {
+        font-size: 1rem !important; /* Уменьшаем размер цены */
+    }
+}
