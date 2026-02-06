@@ -1,5 +1,7 @@
 const products = [
-    { id: 99, name: "Sirli Qutu (Mystery Box)", category: "mystery", price: 40, oldPrice: 65, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500", mystery: true },
+    // Твои изначальные товар
+    { id: 99, name: "Sirli Qutu (Mystery Box)", category: "mystery", price: 40, oldPrice: 65, gender: "Unisex", img: "https://cdn-icons-png.flaticon.com/512/5726/5726678.png", mystery: true },
+    // НОВЫЙ СПИСОК МУЖСКИХ ДУХОВ (Цена 55-70 AZN)
     { id: 101, name: "A. Fitch — Fierce", category: "ətir", price: 62, oldPrice: 95, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
     { id: 102, name: "Amouage — Enclave", category: "ətir", price: 68, oldPrice: 105, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
     { id: 103, name: "Amouage — Epic", category: "ətir", price: 59, oldPrice: 88, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
@@ -66,150 +68,13 @@ const products = [
     { id: 164, name: "YSL — La Nuit de L’Homme", category: "ətir", price: 65, oldPrice: 95, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
     { id: 165, name: "YSL — Y (EDP)", category: "ətir", price: 69, oldPrice: 100, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
     { id: 166, name: "YSL — Y (Le Parfum)", category: "ətir", price: 70, oldPrice: 115, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-// МУЖСКИЕ ХИТЫ (ИМЕННО ТВОЙ СПИСОК)
-    { id: 101, name: "Dior — Sauvage", category: "ətir", price: 65, oldPrice: 95, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 102, name: "Chanel — Bleu de Chanel", category: "ətir", price: 68, oldPrice: 100, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 103, name: "Creed — Aventus", category: "ətir", price: 70, oldPrice: 120, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 104, name: "G. Armani — Acqua di Giò", category: "ətir", price: 58, oldPrice: 85, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 105, name: "Versace — Eros", category: "ətir", price: 57, oldPrice: 82, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 106, name: "Hermès — Terre d’Hermès", category: "ətir", price: 64, oldPrice: 90, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 107, name: "Paco Rabanne — Invictus", category: "ətir", price: 60, oldPrice: 88, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 108, name: "Paco Rabanne — 1 Million", category: "ətir", price: 62, oldPrice: 92, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 109, name: "YSL — Y (Eau de Parfum)", category: "ətir", price: 69, oldPrice: 105, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 110, name: "J.P. Gaultier — Le Male", category: "ətir", price: 61, oldPrice: 85, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 111, name: "Dior — Homme Intense", category: "ətir", price: 67, oldPrice: 98, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 112, name: "Hugo Boss — Boss Bottled", category: "ətir", price: 55, oldPrice: 80, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 113, name: "D&G — The One for Men", category: "ətir", price: 63, oldPrice: 90, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 114, name: "Valentino — Uomo Born In Roma", category: "ətir", price: 68, oldPrice: 100, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 115, name: "Prada — L’Homme", category: "ətir", price: 66, oldPrice: 95, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 116, name: "V&R — Spicebomb Extreme", category: "ətir", price: 70, oldPrice: 110, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 117, name: "Azzaro — The Most Wanted", category: "ətir", price: 65, oldPrice: 98, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 118, name: "Montblanc — Explorer", category: "ətir", price: 59, oldPrice: 85, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 119, name: "Givenchy — Gentleman Society", category: "ətir", price: 68, oldPrice: 105, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 120, name: "C. Herrera — Bad Boy", category: "ətir", price: 64, oldPrice: 95, gender: "Kişi", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-// QADIN ƏTİRLƏRİ SİYAHISI
-    { id: 201, name: "Chanel — No. 5", category: "ətir", price: 70, oldPrice: 110, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 202, name: "Chanel — Coco Mademoiselle", category: "ətir", price: 68, oldPrice: 105, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 203, name: "Chanel — Chance Eau Tendre", category: "ətir", price: 65, oldPrice: 98, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 204, name: "Dior — J’adore", category: "ətir", price: 67, oldPrice: 100, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 205, name: "Miss Dior", category: "ətir", price: 64, oldPrice: 95, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 206, name: "MFK — Baccarat Rouge 540", category: "ətir", price: 70, oldPrice: 160, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 207, name: "Lancôme — La Vie Est Belle", category: "ətir", price: 62, oldPrice: 90, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 208, name: "YSL — Black Opium", category: "ətir", price: 66, oldPrice: 99, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 209, name: "YSL — Libre", category: "ətir", price: 68, oldPrice: 105, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 210, name: "D&G — Light Blue", category: "ətir", price: 55, oldPrice: 80, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 211, name: "D&G — L’Imperatrice 3", category: "ətir", price: 58, oldPrice: 85, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 212, name: "Versace — Bright Crystal", category: "ətir", price: 57, oldPrice: 82, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 213, name: "Tom Ford — Lost Cherry", category: "ətir", price: 70, oldPrice: 150, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 214, name: "Tom Ford — Black Orchid", category: "ətir", price: 70, oldPrice: 140, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 215, name: "Carolina Herrera — Good Girl", category: "ətir", price: 65, oldPrice: 98, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 216, name: "Giorgio Armani — Sì", category: "ətir", price: 63, oldPrice: 92, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 217, name: "Lanvin — Éclat d’Arpège", category: "ətir", price: 55, oldPrice: 78, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 218, name: "Byredo — Bal d'Afrique", category: "ətir", price: 70, oldPrice: 145, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 219, name: "Byredo — Mojave Ghost", category: "ətir", price: 69, oldPrice: 135, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 220, name: "Ex Nihilo — Fleur Narcotique", category: "ətir", price: 70, oldPrice: 155, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 221, name: "P. de Marly — Delina", category: "ətir", price: 70, oldPrice: 160, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 222, name: "Kilian — Love, Don't Be Shy", category: "ətir", price: 70, oldPrice: 165, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 223, name: "Jo Malone — Wood Sage & Sea Salt", category: "ətir", price: 66, oldPrice: 110, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 224, name: "Juliette Has A Gun — Not A Perfume", category: "ətir", price: 62, oldPrice: 95, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 225, name: "Narciso Rodriguez — For Her", category: "ətir", price: 60, oldPrice: 88, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 226, name: "Thierry Mugler — Angel", category: "ətir", price: 67, oldPrice: 105, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 227, name: "Thierry Mugler — Alien", category: "ətir", price: 68, oldPrice: 108, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 228, name: "Givenchy — L’Interdit", category: "ətir", price: 64, oldPrice: 95, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 229, name: "Chloe — Eau de Parfum", category: "ətir", price: 63, oldPrice: 92, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 230, name: "Marc Jacobs — Daisy", category: "ətir", price: 59, oldPrice: 85, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 231, name: "Tiziana Terenzi — Kirke", category: "ətir", price: 70, oldPrice: 140, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 232, name: "Zarkoperfume — PINK MOLECULE 090.09", category: "ətir", price: 68, oldPrice: 115, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 233, name: "Le Labo — Santal 33", category: "ətir", price: 70, oldPrice: 170, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 234, name: "Guerlain — Shalimar", category: "ətir", price: 65, oldPrice: 100, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 235, name: "Guerlain — Aqua Allegoria Mandarine Basilic", category: "ətir", price: 62, oldPrice: 95, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 236, name: "Prada — Paradoxe", category: "ətir", price: 69, oldPrice: 110, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 237, name: "Valentino — Donna Born In Roma", category: "ətir", price: 68, oldPrice: 105, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 238, name: "Burberry — Goddess", category: "ətir", price: 67, oldPrice: 102, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 239, name: "Vilhelm Parfumerie — Mango Skin", category: "ətir", price: 70, oldPrice: 135, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 240, name: "Trussardi — Donna", category: "ətir", price: 58, oldPrice: 88, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 241, name: "Lacoste — Pour Femme", category: "ətir", price: 55, oldPrice: 80, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 242, name: "Hugo Boss — Alive", category: "ətir", price: 60, oldPrice: 92, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 243, name: "Calvin Klein — Euphoria", category: "ətir", price: 56, oldPrice: 85, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 244, name: "Kenzo — L’Eau par Kenzo", category: "ətir", price: 55, oldPrice: 78, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 245, name: "Nina Ricci — Nina (Qırmızı alma)", category: "ətir", price: 57, oldPrice: 82, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 246, name: "Gucci — Flora Gorgeous Gardenia", category: "ətir", price: 69, oldPrice: 115, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 247, name: "Estée Lauder — Pleasure", category: "ətir", price: 61, oldPrice: 90, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 248, name: "Diptyque — Philosykos", category: "ətir", price: 70, oldPrice: 130, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 249, name: "Moschino — Toy 2", category: "ətir", price: 59, oldPrice: 88, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 250, name: "Lancôme — Idôle", category: "ətir", price: 68, oldPrice: 105, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-// --- ЖЕНСКИЕ ХИТЫ (Qadın) ---
-    { id: 251, name: "Viktor&Rolf — Flowerbomb", category: "ətir", price: 70, oldPrice: 115, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 252, name: "Gucci — Bloom", category: "ətir", price: 65, oldPrice: 98, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 253, name: "G. Armani — My Way", category: "ətir", price: 68, oldPrice: 105, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 254, name: "Glossier — You", category: "ətir", price: 62, oldPrice: 90, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 255, name: "Burberry — Her", category: "ətir", price: 66, oldPrice: 100, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 256, name: "Valentino — Voce Viva", category: "ətir", price: 67, oldPrice: 102, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 257, name: "Thierry Mugler — Alien", category: "ətir", price: 69, oldPrice: 110, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 258, name: "Kayali — Vanilla | 28", category: "ətir", price: 70, oldPrice: 120, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 259, name: "P. de Marly — Valaya", category: "ətir", price: 70, oldPrice: 160, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 260, name: "D&G — Devotion", category: "ətir", price: 68, oldPrice: 100, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 261, name: "Jo Malone — Peony & Blush Suede", category: "ətir", price: 66, oldPrice: 105, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 262, name: "M. Margiela — Lazy Sunday Morning", category: "ətir", price: 68, oldPrice: 110, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 263, name: "Ariana Grande — Cloud", category: "ətir", price: 60, oldPrice: 85, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 264, name: "Sol de Janeiro — Cheirosa '62", category: "ətir", price: 45, oldPrice: 65, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 265, name: "Amouage — Guidance", category: "ətir", price: 70, oldPrice: 140, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 266, name: "Lattafa — Yara", category: "ətir", price: 55, oldPrice: 75, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 267, name: "Phlur — Missing Person", category: "ətir", price: 65, oldPrice: 95, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 268, name: "Guerlain — Mon Guerlain", category: "ətir", price: 64, oldPrice: 92, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 269, name: "J.P. Gaultier — Divine", category: "ətir", price: 68, oldPrice: 100, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 270, name: "Hermès — Twilly d’Hermès", category: "ətir", price: 62, oldPrice: 88, gender: "Qadın", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-// --- UNISEX ƏTİRLƏRİ (ID 300+) ---
-    { id: 301, name: "MFK — Baccarat Rouge 540", category: "ətir", price: 70, oldPrice: 160, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 302, name: "Le Labo — Santal 33", category: "ətir", price: 70, oldPrice: 170, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 303, name: "Byredo — Bal d'Afrique", category: "ətir", price: 70, oldPrice: 145, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 304, name: "Tom Ford — Tobacco Vanille", category: "ətir", price: 70, oldPrice: 155, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 305, name: "Tom Ford — Oud Wood", category: "ətir", price: 70, oldPrice: 150, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 306, name: "Escentric Molecules — Molecule 01", category: "ətir", price: 60, oldPrice: 90, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 307, name: "Escentric Molecules — Escentric 02", category: "ətir", price: 62, oldPrice: 95, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 308, name: "Creed — Aventus", category: "ətir", price: 70, oldPrice: 120, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 309, name: "Jo Malone — Wood Sage & Sea Salt", category: "ətir", price: 65, oldPrice: 110, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 310, name: "M.A. Barrois — Ganymede", category: "ətir", price: 70, oldPrice: 165, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 311, name: "Byredo — Gypsy Water", category: "ətir", price: 69, oldPrice: 140, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 312, name: "Kilian — Angels' Share", category: "ətir", price: 70, oldPrice: 180, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 313, name: "Diptyque — Philosykos", category: "ətir", price: 67, oldPrice: 125, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 314, name: "Ex Nihilo — Fleur Narcotique", category: "ətir", price: 70, oldPrice: 155, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 315, name: "Tiziana Terenzi — Kirke", category: "ətir", price: 70, oldPrice: 140, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 316, name: "Vilhelm Parfumerie — Mango Skin", category: "ətir", price: 70, oldPrice: 135, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 317, name: "Juliette Has A Gun — Not A Perfume", category: "ətir", price: 62, oldPrice: 95, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 318, name: "Hermès — Un Jardin sur le Nil", category: "ətir", price: 64, oldPrice: 100, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 319, name: "Calvin Klein — CK One", category: "ətir", price: 55, oldPrice: 80, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 320, name: "Nasomatto — Black Afgano", category: "ətir", price: 70, oldPrice: 160, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 321, name: "M.M. Margiela — By the Fireplace", category: "ətir", price: 68, oldPrice: 120, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 322, name: "Byredo — Mojave Ghost", category: "ətir", price: 69, oldPrice: 140, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 323, name: "Tom Ford — Lost Cherry", category: "ətir", price: 70, oldPrice: 155, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 324, name: "Kilian — Black Phantom", category: "ətir", price: 70, oldPrice: 175, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 325, name: "Initio — Musk Therapy", category: "ətir", price: 70, oldPrice: 180, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 326, name: "Essential Parfums — Bois Impérial", category: "ətir", price: 65, oldPrice: 105, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 327, name: "Orto Parisi — Megamare", category: "ətir", price: 70, oldPrice: 190, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 328, name: "Mancera — Cedrat Boise", category: "ətir", price: 63, oldPrice: 110, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 329, name: "Montale — Intense Cafe", category: "ətir", price: 62, oldPrice: 100, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 330, name: "Serge Lutens — Chergui", category: "ətir", price: 69, oldPrice: 130, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 331, name: "Acqua di Parma — Colonia", category: "ətir", price: 66, oldPrice: 115, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 332, name: "Le Labo — Another 13", category: "ətir", price: 70, oldPrice: 175, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 333, name: "Diptyque — Tam Dao", category: "ətir", price: 67, oldPrice: 120, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 334, name: "Tom Ford — Ombré Leather", category: "ətir", price: 70, oldPrice: 145, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 335, name: "F. Malle — Portrait of a Lady", category: "ətir", price: 70, oldPrice: 200, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 336, name: "Byredo — Bibliothèque", category: "ətir", price: 69, oldPrice: 140, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 337, name: "MFK — Gentle Fluidity Silver", category: "ətir", price: 70, oldPrice: 165, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 338, name: "Xerjoff — Erba Pura", category: "ətir", price: 70, oldPrice: 170, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 339, name: "Nishane — Hacivat", category: "ətir", price: 70, oldPrice: 180, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 340, name: "Attar Collection — Musk Kashmir", category: "ətir", price: 66, oldPrice: 110, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 341, name: "Dyptique — Baies", category: "ətir", price: 60, oldPrice: 95, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 342, name: "Hermès — Voyage d'Hermès", category: "ətir", price: 65, oldPrice: 105, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 343, name: "Comme des Garçons — 2", category: "ətir", price: 67, oldPrice: 110, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 344, name: "Memo Paris — African Leather", category: "ətir", price: 70, oldPrice: 185, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 345, name: "Lattafa — Khamrah", category: "ətir", price: 58, oldPrice: 85, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 346, name: "State of Mind — French Gallantry", category: "ətir", price: 70, oldPrice: 160, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 347, name: "Vilhelm Parfumerie — Morning Chess", category: "ətir", price: 70, oldPrice: 145, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 348, name: "Giardini di Toscana — Bianco Latte", category: "ətir", price: 70, oldPrice: 155, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 349, name: "Aesop — Marrakech Intense", category: "ətir", price: 68, oldPrice: 120, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
-    { id: 350, name: "Byredo — Mixed Emotions", category: "ətir", price: 70, oldPrice: 145, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" }
+
+    // Qramla ətirlər
+    { id: 201, name: "Qramla ətir - 11 ML", category: "qram", price: 9, oldPrice: 15, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
+    { id: 202, name: "Qramla ətir - 15 ML", category: "qram", price: 16, oldPrice: 22, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
+    { id: 203, name: "Qramla ətir - 25 ML", category: "qram", price: 20, oldPrice: 28, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
+    { id: 204, name: "Qramla ətir - 30 ML", category: "qram", price: 26, oldPrice: 35, gender: "Unisex", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&q=80&w=500" },
+    // Остальные товары без изменений...
 ];
 
 const faqs = [
@@ -439,8 +304,26 @@ function shareCart() {
 }
 
 function checkoutWhatsApp() {
-    if (cart.length === 0) return alert("Səbət boşdur!");
-    let msg = "Salam! Sifarişlərim:\n" + cart.map(i => `• ${i.name} (${i.qty} ədəd)`).join('\n');
+    if (cart.length === 0) {
+        return alert("Səbətiniz boşdur!");
+    }
+
+    // Считаем общую сумму
+    const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+    
+    // Формируем красивый текст
+    let msg = "🛍️ *YENİ SİFARİŞ (AYTAC PARFUM)*\n";
+    msg += "--------------------------\n\n";
+
+    cart.forEach((item, index) => {
+        msg += `*${index + 1}. ${item.name}*\n`;
+        msg += `   Qiymət: ${item.price} AZN | Say: ${item.qty} ədəd\n\n`;
+    });
+
+    msg += "--------------------------\n";
+    msg += `💰 *YEKUN MƏBLƏĞ: ${total} AZN*\n\n`;
+    msg += "📍 *Zəhmət olmasa, çatdırılma ünvanınızı qeyd edin:*";
+
     window.open(`https://wa.me/994515975206?text=${encodeURIComponent(msg)}`);
 }
 
@@ -614,3 +497,4 @@ window.addEventListener('load', () => {
     setInterval(() => showCenterPopup('delivery'), 240000);
     setInterval(() => showCenterPopup('stock'), 150000);
 });
+
